@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "curs"
+version = "0.1.0"
+description = ""
+authors = ["Vladislav B <131883552+Roll1ngo@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+curs_usd = 'curs_package.curs:main'
